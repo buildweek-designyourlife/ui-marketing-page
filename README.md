@@ -42,4 +42,4 @@ What websites are similar to this that we can use as inspiration
 Warren, can you make some copy for us- we can't use Lorem Ipsum...
 Color scheme
 Fonts
-
+Animation not required- we are making a marketing page.
