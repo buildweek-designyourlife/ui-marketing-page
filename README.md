@@ -40,6 +40,12 @@ This is for Allie. I'm not sure what documentation this pertains to.
 Are we working with photo images or vectors as main design
 What websites are similar to this that we can use as inspiration
 Warren, can you make some copy for us- we can't use Lorem Ipsum...
-Color scheme
-Fonts
+Color scheme: bright light blue and with yello or orange accent
+White Background Light blue and Light green and light Greys for interface
+
+Fonts: roboto (google fonts) 
 Animation not required- we are making a marketing page.
+
+## Working on Technical documents
+https://docs.google.com/document/d/1mZgLZ-b3vBzEQkWwloEa8hK3QbR65gJQRt5nFkMp9Zg/edit#
+This is our shared document on the app and the marketing page.
