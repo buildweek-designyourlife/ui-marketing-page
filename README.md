@@ -1,5 +1,13 @@
 # ui-marketing-page
 
+run `npm install` to install all dependencies
+
+run `less-watch-compiler less css index.less` to begin less compiling into css
+
+At the end of each day, `git push <firstname>-<lastname>`, then have someone review and merge into master.
+Before beginning work the next day, `git pull origin master` to start fresh with all updates.
+
+
 ## Links for Design Your Life
 http://lifedesignlab.stanford.edu/ this is the main base of information we are working from. This 
 
