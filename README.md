@@ -1,4 +1,4 @@
-# ui-marking-page
+# ui-marketing-page
 
 ## Links for Design Your Life
 http://lifedesignlab.stanford.edu/ this is the main base of information we are working from. This 
