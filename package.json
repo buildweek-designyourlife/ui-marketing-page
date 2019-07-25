@@ -1,0 +1,23 @@
+{
+  "name": "ui-marketing-page",
+  "version": "1.0.0",
+  "description": "Marketing Page for Design Your Life app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildweek-designyourlife/ui-marketing-page.git"
+  },
+  "author": "Clif Hodges and Warren Rawlings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buildweek-designyourlife/ui-marketing-page/issues"
+  },
+  "homepage": "https://github.com/buildweek-designyourlife/ui-marketing-page#readme",
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0"
+  }
+}
