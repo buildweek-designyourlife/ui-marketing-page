@@ -57,3 +57,50 @@ Animation not required- we are making a marketing page.
 ## Working on Technical documents
 https://docs.google.com/document/d/1mZgLZ-b3vBzEQkWwloEa8hK3QbR65gJQRt5nFkMp9Zg/edit#
 This is our shared document on the app and the marketing page.
+
+# Design Components
+## Included elements in MAIN Pages
+1. Main Navigation
+    Home
+    Features (travel to section 5. features area)
+    Login (take us directly to the app)
+    About
+
+2. First Section- backgournd color (or video) and main text is a one sentence value proposition
+--Login
+--Image to the side or under
+
+3. Second Section
+Body text on how our app relates to the original Stamfort course with a link to that page
+Possible fade in animation.
+
+4. Design Your Life Youtube image so you can watch the original course lecture for yourself. 
+Access to video through fair use because we are students.
+
+5. Features for the App in a COLUMN format (3 columns)
+    --Log your activity
+    --Take notes and add details
+    --Assess your responses 1-10
+
+6. Call to action FINAL BUTTON 
+
+7. Footer Nav and copyrite notes
+
+## Included elements in About Us Page
+1. Main Navigation
+    Home
+    Features (travel to section 5. features area)
+    Login (take us directly to the app)
+    About
+
+2. First Section- backgournd color (or video) and main text is a one sentence value proposition
+    --About Us
+    --2 sentences about how we were placed together- take a look at our members
+
+3. Carousel or animated in through scroll down
+    --Image and Text blurb for each person
+    --link to your portfolio page or contact stuff
+
+4. Call to action FINAL BUTTON
+
+5. Footer Nav and copyrite notes
