@@ -1,0 +1,66 @@
+.v-header {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: @white;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.fullscreen-video-wrap {
+    .video {
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+.header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    background: linear-gradient(rgba(26,133,176,0.35),rgba(26,133,176,1.0));
+    //opacity:0.35;
+    //opacity: linear-gradient(rgba(26,133,176,0.35),rgba(26,133,176,1.0));
+    /* Warren: See if you can change this into a gradient goes from light to full color that matches the next section so it looks seamless.*/
+    /*linear-gradient(0.35, 1.0); needs to be rgba values*/
+  }
+
+  .header-content{
+    z-index:2;
+  }
+  
+  .header-content h1{
+    font-size:7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .header-content p{
+    font-size:2rem;
+    display:block;
+    padding-bottom:3rem;
+  }
+  
+  .btn{
+    background: @lightBlue;
+    color: @white;
+    font-size:2.5rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
