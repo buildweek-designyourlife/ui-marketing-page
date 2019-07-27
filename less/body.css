@@ -1,0 +1,18 @@
+.section {
+  padding: 20px 0;
+  font-size: 1.7rem;
+}
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.section-b {
+  background: #39444e;
+  color: #dce2ed;
+}
+@media (max-width: 960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
