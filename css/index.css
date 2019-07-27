@@ -203,6 +203,9 @@ body {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+.section p {
+  margin-bottom: 1rem;
+}
 .section-b {
   background: #39444e;
   color: #dce2ed;
