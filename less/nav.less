@@ -1,15 +1,18 @@
 @import "variables";
 @import "animations";
 
+nav {
+  position: fixed !important;
+  width: 100%;
+}
+
 .nav {
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   color: @white;
   background: fade(@black, 80%);
-  position: relative;
   z-index: 1000;
 
   .logo h4 a {
