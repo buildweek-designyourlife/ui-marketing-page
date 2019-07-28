@@ -164,10 +164,12 @@ body {
   position: relative;
   z-index: 1000;
 }
-.nav .logo {
+.nav .logo h4 a {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #dce2ed;
 }
 .nav .nav-links {
   display: flex;
