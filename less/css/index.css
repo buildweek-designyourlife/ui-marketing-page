@@ -142,6 +142,100 @@ body {
   margin: 0;
   font-size: 1rem;
 }
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  color: #39444e;
+  background: rgba(137, 199, 50, 0.7);
+  position: relative;
+  z-index: 1000;
+}
+.nav .logo {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+}
+@media (max-width: 1000px) {
+  .nav .nav-links {
+    width: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .nav .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 92vh;
+    width: 60%;
+    background: rgba(137, 199, 50, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+}
+.nav .nav-links .link {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .nav .nav-links .link {
+    opacity: 0;
+  }
+}
+.nav .nav-links .link a {
+  color: #39444e;
+  text-decoration: none;
+}
+.nav .nav-active {
+  transform: translateX(0);
+}
+.nav .cta {
+  padding: 10px 20px;
+  border: 3px solid #22b3eb;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.nav .cta:hover {
+  background: #dce2ed;
+  border: 3px solid #dce2ed;
+}
+.nav .burger {
+  display: none;
+}
+@media (max-width: 800px) {
+  .nav .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav .burger div {
+  width: 25px;
+  height: 3px;
+  background: #39444e;
+  margin: 5px;
+}
 .v-header {
   height: 100vh;
   display: flex;
@@ -161,6 +255,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: -1;
 }
 .fullscreen-video-wrap .video {
   min-width: 100%;
@@ -172,7 +267,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 0;
   background: linear-gradient(rgba(26, 133, 176, 0.35), rgba(26, 133, 176, 0.55), #1a85b0);
 }
 .header-content {
@@ -202,26 +297,6 @@ body {
 .section h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
-}
-.section p {
-  margin-bottom: 1rem;
-}
-.vid-contain {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-.vid-contain iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.text-contain {
-  margin: 1rem;
-  font-size: 2rem;
 }
 .section-b {
   background: #39444e;
