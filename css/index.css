@@ -289,6 +289,13 @@ nav {
   display: block;
   padding-bottom: 6rem;
 }
+.header-content .arrow {
+  margin-top: 5rem;
+}
+.header-content a {
+  text-decoration: none;
+  color: #dce2ed;
+}
 .btn {
   background: #39444e;
   color: #dce2ed;
@@ -305,6 +312,20 @@ nav {
 .section {
   padding: 20px 0;
   font-size: 1.7rem;
+}
+.section-a {
+  background-color: #1985b0;
+  margin: 1rem, 0;
+}
+.section-a1 {
+  background-color: #dce2ed;
+  margin: 1rem, 0;
+  padding: 3rem;
+}
+.section-a1 h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 .section h2 {
   font-size: 3rem;
@@ -329,6 +350,7 @@ nav {
 .text-contain {
   margin: 1rem;
   font-size: 2rem;
+  color: #dce2ed;
 }
 .section-b {
   background: #39444e;
