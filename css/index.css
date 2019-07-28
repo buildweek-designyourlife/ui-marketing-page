@@ -134,6 +134,7 @@ table {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background: #dce2ed;
@@ -153,12 +154,13 @@ body {
   }
 }
 .nav {
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  color: #39444e;
-  background: rgba(137, 199, 50, 0.7);
+  color: #dce2ed;
+  background: rgba(57, 68, 78, 0.8);
   position: relative;
   z-index: 1000;
 }
@@ -185,7 +187,7 @@ body {
     top: 8vh;
     height: 92vh;
     width: 60%;
-    background: rgba(137, 199, 50, 0.7);
+    background: rgba(57, 68, 78, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -205,7 +207,7 @@ body {
   }
 }
 .nav .nav-links .link a {
-  color: #39444e;
+  color: #dce2ed;
   text-decoration: none;
 }
 .nav .nav-active {
@@ -218,7 +220,7 @@ body {
   cursor: pointer;
 }
 .nav .cta:hover {
-  background: #dce2ed;
+  background: #89c732;
   border: 3px solid #dce2ed;
 }
 .nav .burger {
@@ -233,7 +235,7 @@ body {
 .nav .burger div {
   width: 25px;
   height: 3px;
-  background: #39444e;
+  background: #dce2ed;
   margin: 5px;
 }
 .v-header {
@@ -284,11 +286,17 @@ body {
   padding-bottom: 6rem;
 }
 .btn {
-  background: #5ec5f0;
+  background: #39444e;
   color: #dce2ed;
   font-size: 3rem;
   padding: 1rem 3rem;
   text-decoration: none;
+  border: 3px solid #22b3eb;
+  border-radius: 30px;
+}
+.btn:hover {
+  background: #89c732;
+  border: 3px solid #dce2ed;
 }
 .section {
   padding: 20px 0;
