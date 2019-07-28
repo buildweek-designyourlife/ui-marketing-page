@@ -203,6 +203,26 @@ body {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+.section p {
+  margin-bottom: 1rem;
+}
+.vid-contain {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.vid-contain iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.text-contain {
+  margin: 1rem;
+  font-size: 2rem;
+}
 .section-b {
   background: #39444e;
   color: #dce2ed;
@@ -212,8 +232,4 @@ body {
     padding-right: 3rem;
     padding-left: 3rem;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3680c30c22854e3926063f3a785c8d259f9268fe
