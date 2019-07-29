@@ -6,16 +6,25 @@
 }
 .section-a {
     background-color: @darkBlue;
-    margin: 1rem, 0;
+    a:visited {
+        color: @lightGrey;
+    }
 }
-.section-a1 {
+.section-a1 { 
     background-color: @white;
-    margin: 1rem, 0;
+    margin: 1rem auto;
     padding: 3rem;
+    max-width: 960px;
+
     h2 {
         font-size: 3rem;
         margin-bottom: 1.5rem;
         text-align: center;       
+    }
+    div .vid-contain iframe {
+        max-width: 960px;
+        margin: auto;
+
     }
 }
 .section h2 {
@@ -32,6 +41,7 @@
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
+    max-width: 960px;
 }
 .vid-contain iframe {
     position: absolute;
@@ -39,6 +49,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    max-width: 960px;
 }
 .text-contain {
     margin: 1rem;
@@ -49,6 +60,35 @@
 .section-b{
     background: @black;
     color: @white;
+    p {
+        font-size: 2rem;
+    }
+    .steps {
+        display: flex;
+        flex-direction: row;
+        .step1 {
+            background-color: @lightGrey;
+            margin: 0.5rem;
+            border-radius: 10px;
+            color: @darkBlue;
+            padding: 1rem;
+        }
+        .step2 {
+            background-color: @lightGrey;
+            margin: 0.5rem;
+            border-radius: 10px;
+            color: @darkBlue;
+            padding: 1rem;
+        } 
+        .step3 {
+            background-color: @lightGrey;
+            margin: 0.5rem;
+            border-radius: 10px;
+            color: @darkBlue;
+            padding: 1rem;
+        }     
+    }
+    
   }
   
 @media(max-width:960px){
