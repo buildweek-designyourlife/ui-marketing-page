@@ -54,11 +54,24 @@
     display:block;
     padding-bottom:6rem;
   }
-  
+  .header-content .arrow {
+    margin-top: 5rem;
+  }
+  .header-content a {
+    text-decoration: none;
+    color: @white;
+  }
   .btn{
-    background: @lightBlue;
+    background: @black;
     color: @white;
     font-size:3rem;
     padding: 1rem 3rem;
     text-decoration: none;
+    border: 3px solid @blue;
+    border-radius: 30px;
+
+    &:hover {
+      background: @green;
+      border: 3px solid @white;
+    }
   }

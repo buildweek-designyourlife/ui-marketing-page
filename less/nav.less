@@ -1,20 +1,26 @@
 @import "variables";
 @import "animations";
 
+nav {
+  position: fixed !important;
+  width: 100%;
+}
+
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  color: @black;
-  background: fade(@green, 70%);
-  position: relative;
+  color: @white;
+  background: fade(@black, 80%);
   z-index: 1000;
 
-  .logo {
+  .logo h4 a {
     font-size: 2rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
+    text-decoration: none;
+    color: @white;
   }
 
   .nav-links {
@@ -33,7 +39,7 @@
       top: 8vh;
       height: 92vh;
       width: 60%;
-      background: fade(@green, 70%);
+      background: fade(@black, 80%);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -52,7 +58,7 @@
       }
       
       a {
-        color: @black;
+        color: @white;
         text-decoration: none;
       }
     }
@@ -69,7 +75,7 @@
     cursor: pointer;
 
     &:hover {
-      background: @white;
+      background: @green;
       border: 3px solid @white;
     }
   }
@@ -85,7 +91,7 @@
     div {
       width: 25px;
       height: 3px;
-      background: @black;
+      background: @white;
       margin: 5px;
     }
   }
