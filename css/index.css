@@ -372,6 +372,12 @@ nav {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 800px) {
+  .section-b .steps {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
 .section-b .steps .step1 {
   background-color: #d1d9e9;
   margin: 0.5rem;
@@ -379,6 +385,11 @@ nav {
   color: #1985b0;
   padding: 1rem;
   max-width: 33%;
+}
+@media (max-width: 800px) {
+  .section-b .steps .step1 {
+    max-width: 100%;
+  }
 }
 .section-b .steps .step2 {
   background-color: #d1d9e9;
@@ -388,6 +399,11 @@ nav {
   padding: 1rem;
   max-width: 33%;
 }
+@media (max-width: 800px) {
+  .section-b .steps .step2 {
+    max-width: 100%;
+  }
+}
 .section-b .steps .step3 {
   background-color: #d1d9e9;
   margin: 0.5rem;
@@ -395,6 +411,11 @@ nav {
   color: #1985b0;
   padding: 1rem;
   max-width: 33%;
+}
+@media (max-width: 800px) {
+  .section-b .steps .step3 {
+    max-width: 100%;
+  }
 }
 @media (max-width: 960px) {
   .container {
