@@ -1,6 +1,10 @@
 .v-header {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #dce2ed;
 }
@@ -30,6 +34,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 133, 176, 0.35)), color-stop(rgba(26, 133, 176, 0.55)), to(#1a85b0));
   background: linear-gradient(rgba(26, 133, 176, 0.35), rgba(26, 133, 176, 0.55), #1a85b0);
 }
 .header-content {
@@ -45,10 +50,23 @@
   display: block;
   padding-bottom: 6rem;
 }
+.header-content .arrow {
+  margin-top: 5rem;
+}
+.header-content a {
+  text-decoration: none;
+  color: #dce2ed;
+}
 .btn {
-  background: #5ec5f0;
+  background: #39444e;
   color: #dce2ed;
   font-size: 3rem;
   padding: 1rem 3rem;
   text-decoration: none;
+  border: 3px solid #22b3eb;
+  border-radius: 30px;
+}
+.btn:hover {
+  background: #89c732;
+  border: 3px solid #dce2ed;
 }

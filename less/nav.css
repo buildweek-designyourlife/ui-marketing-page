@@ -13,8 +13,13 @@ nav {
   width: 100%;
 }
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 8vh;
   color: #dce2ed;
@@ -23,14 +28,20 @@ nav {
 }
 .nav .logo h4 a {
   font-size: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #dce2ed;
 }
 .nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 30vw;
 }
@@ -47,16 +58,28 @@ nav {
     height: 92vh;
     width: 60%;
     background: rgba(57, 68, 78, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
 }
 .nav .nav-links .link {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -70,6 +93,7 @@ nav {
   text-decoration: none;
 }
 .nav .nav-active {
+  -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 .nav .cta {
@@ -96,14 +120,17 @@ nav {
   height: 3px;
   background: #dce2ed;
   margin: 5px;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .nav .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 .nav .toggle .line2 {
   opacity: 0;
 }
 .nav .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
   transform: rotate(45deg) translate(-5px, -6px);
 }
