@@ -1,18 +1,141 @@
 .section {
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
   font-size: 1.7rem;
+}
+.section-a {
+  background-color: #1985b0;
+}
+.section-a a:visited {
+  color: #d1d9e9;
+}
+.section-a1 {
+  background-color: #dce2ed;
+  margin: 1rem auto;
+  padding: 3rem;
+  max-width: 960px;
+}
+.section-a1 h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.section-a1 div .vid-contain iframe {
+  max-width: 960px;
+  margin: auto;
 }
 .section h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+.section p {
+  margin-bottom: 1rem;
+}
+.vid-contain {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 960px;
+}
+.vid-contain iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 960px;
+}
+.text-contain {
+  margin: 1rem;
+  font-size: 2rem;
+  color: #dce2ed;
 }
 .section-b {
   background: #39444e;
   color: #dce2ed;
+}
+.section-b p {
+  font-size: 2rem;
+}
+.section-b .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .section-b .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+.section-b .steps .step1 {
+  background-color: #d1d9e9;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: #1985b0;
+  padding: 1rem;
+  max-width: 33%;
+}
+.section-b .steps .step1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .section-b .steps .step1 {
+    max-width: 100%;
+  }
+}
+.section-b .steps .step2 {
+  background-color: #d1d9e9;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: #1985b0;
+  padding: 1rem;
+  max-width: 33%;
+}
+.section-b .steps .step2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .section-b .steps .step2 {
+    max-width: 100%;
+  }
+}
+.section-b .steps .step3 {
+  background-color: #d1d9e9;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: #1985b0;
+  padding: 1rem;
+  max-width: 33%;
+}
+.section-b .steps .step3 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .section-b .steps .step3 {
+    max-width: 100%;
+  }
 }
 @media (max-width: 960px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
   }
+}
+.cta1 {
+  margin-top: 6rem;
 }

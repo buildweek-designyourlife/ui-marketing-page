@@ -2,8 +2,12 @@
 
 .v-header {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: @white;
 }
 
@@ -36,6 +40,7 @@
     width:100vw;
     height:100vh;
     z-index:0;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(26,133,176,0.35)),color-stop(rgba(26,133,176,0.55)), to(rgba(26,133,176,1.0)));
     background: linear-gradient(rgba(26,133,176,0.35),rgba(26,133,176,0.55), rgba(26,133,176,1.0));
   }
 
