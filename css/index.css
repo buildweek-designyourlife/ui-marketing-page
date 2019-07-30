@@ -241,6 +241,16 @@ nav {
   height: 3px;
   background: #dce2ed;
   margin: 5px;
+  transition: all 0.2s ease;
+}
+.nav .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.nav .toggle .line2 {
+  opacity: 0;
+}
+.nav .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 .v-header {
   height: 100vh;

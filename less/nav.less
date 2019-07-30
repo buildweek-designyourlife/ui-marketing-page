@@ -93,6 +93,21 @@ nav {
       height: 3px;
       background: @white;
       margin: 5px;
+      transition: all .2s ease;
+    }
+  }
+
+  .toggle {
+    .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   }
 }
