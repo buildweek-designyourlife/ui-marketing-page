@@ -320,7 +320,7 @@ nav {
   border: 3px solid #dce2ed;
 }
 .section {
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
   font-size: 1.7rem;
 }
 .section-a {
@@ -347,6 +347,7 @@ nav {
 .section h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 .section p {
   margin-bottom: 1rem;
@@ -396,6 +397,11 @@ nav {
   padding: 1rem;
   max-width: 33%;
 }
+.section-b .steps .step1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 @media (max-width: 800px) {
   .section-b .steps .step1 {
     max-width: 100%;
@@ -408,6 +414,11 @@ nav {
   color: #1985b0;
   padding: 1rem;
   max-width: 33%;
+}
+.section-b .steps .step2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 @media (max-width: 800px) {
   .section-b .steps .step2 {
@@ -422,6 +433,11 @@ nav {
   padding: 1rem;
   max-width: 33%;
 }
+.section-b .steps .step3 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 @media (max-width: 800px) {
   .section-b .steps .step3 {
     max-width: 100%;
@@ -432,4 +448,14 @@ nav {
     padding-right: 3rem;
     padding-left: 3rem;
   }
+}
+.cta1 {
+  margin-top: 6rem;
+}
+footer {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: black;
 }
