@@ -52,6 +52,14 @@
     font-size:7rem;
     font-weight: bold;
     margin-bottom: 3rem;
+
+    @media (max-width: 500px) {
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: @white;
+      text-shadow: -1px 1px 0 rgba(20, 20, 20, 0.6);
+      margin: 20% 0;
+    }
   }
   
   .header-content p{
@@ -61,22 +69,40 @@
   }
   .header-content .arrow {
     margin-top: 5rem;
+
+    a {
+      &:hover {
+        cursor: pointer;
+        color: @green;
+        border-bottom: 1px solid @green;
+      }
+    }
+
   }
   .header-content a {
     text-decoration: none;
     color: @white;
   }
   .btn{
+    display: inline-block;
     background: @black;
     color: @white;
     font-size:3rem;
     padding: 1rem 3rem;
     text-decoration: none;
     border: 3px solid @blue;
-    border-radius: 30px;
+    border-radius: 15px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .8);
+    transition: all .2s ease-in;
 
     &:hover {
       background: @green;
       border: 3px solid @white;
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, .7);
+    }
+
+    &:active {
+      transform: translateY(-1px) scale(1);
     }
   }

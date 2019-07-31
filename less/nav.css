@@ -1,15 +1,29 @@
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
+    -webkit-transform: translateX(50px);
     transform: translateX(50px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 nav {
-  position: fixed !important;
+  position: fixed;
   width: 100%;
 }
 .nav {
@@ -28,7 +42,7 @@ nav {
 }
 .nav .logo h4 a {
   font-size: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #dce2ed;
@@ -55,8 +69,8 @@ nav {
     position: absolute;
     right: 0px;
     top: 8vh;
-    height: 92vh;
-    width: 60%;
+    height: 80vh;
+    width: 70%;
     background: rgba(57, 68, 78, 0.8);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,9 +93,13 @@ nav {
   }
 }
 .nav .nav-links .link {
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+  padding: 2% 0;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all 0.2s ease-in;
 }
 @media (max-width: 800px) {
   .nav .nav-links .link {
@@ -92,19 +110,36 @@ nav {
   color: #dce2ed;
   text-decoration: none;
 }
+.nav .nav-links .link a:not(:last-child):hover {
+  color: #89c732;
+}
+.nav .nav-links .link:not(:last-child):hover {
+  border-bottom: 3px solid #89c732;
+  border-top: 3px solid #89c732;
+}
+.nav .nav-links .cta {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #22b3eb;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in;
+}
+.nav .nav-links .cta:hover {
+  background: #89c732;
+  color: #39444e;
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, 0.5);
+}
+.nav .nav-links .cta:active {
+  transform: translateY(-1px) scale(1);
+}
 .nav .nav-active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-}
-.nav .cta {
-  padding: 10px 20px;
-  border: 3px solid #22b3eb;
-  border-radius: 30px;
-  cursor: pointer;
-}
-.nav .cta:hover {
-  background: #89c732;
-  border: 3px solid #dce2ed;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .nav .burger {
   display: none;
@@ -120,8 +155,8 @@ nav {
   height: 3px;
   background: #dce2ed;
   margin: 5px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 .nav .toggle .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
