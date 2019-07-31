@@ -67,16 +67,25 @@
     color: @white;
   }
   .btn{
+    display: inline-block;
     background: @black;
     color: @white;
     font-size:3rem;
     padding: 1rem 3rem;
     text-decoration: none;
     border: 3px solid @blue;
-    border-radius: 30px;
+    border-radius: 15px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .8);
+    transition: all .2s ease-in;
 
     &:hover {
       background: @green;
       border: 3px solid @white;
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, .7);
+    }
+
+    &:active {
+      transform: translateY(-1px) scale(1);
     }
   }

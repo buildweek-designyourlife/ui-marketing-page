@@ -2,7 +2,7 @@
 @import "animations";
 
 nav {
-  position: fixed !important;
+  position: fixed;
   width: 100%;
 }
 
@@ -48,8 +48,8 @@ nav {
       position: absolute;
       right: 0px;
       top: 8vh;
-      height: 92vh;
-      width: 60%;
+      height: 80vh;
+      width: 70%;
       background: fade(@black, 80%);
       display: -webkit-box;
       display: -ms-flexbox;
@@ -75,6 +75,10 @@ nav {
       letter-spacing: .1rem;
       text-transform: uppercase;
       font-size: 1.5rem;
+      padding: 2% 0;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid transparent;
+      transition: all .2s ease-in;
 
       @media (max-width: 800px) {
         opacity: 0;
@@ -83,26 +87,48 @@ nav {
       a {
         color: @white;
         text-decoration: none;
+
+        &:not(:last-child):hover {
+          color: @green;
+        }
+      }
+
+      &:not(:last-child):hover {
+        border-bottom: 3px solid @green;
+        border-top: 3px solid @green;
+      }
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid @blue;
+      border-radius: 15px;
+      cursor: pointer;
+      border-radius: 15px;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .6);
+      transition: all .2s ease-in;
+  
+      &:hover {
+        background: @green;
+        color: @black;
+        transform: translateY(-3px) scale(1.01);
+        box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, .5);
+      }
+
+      &:active {
+        transform: translateY(-1px) scale(1);
       }
     }
   }
-
+  
   .nav-active {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-
-  .cta {
-    padding: 10px 20px;
-    border: 3px solid @blue;
-    border-radius: 30px;
-    cursor: pointer;
-
-    &:hover {
-      background: @green;
-      border: 3px solid @white;
-    }
-  }
+  
 
   .burger {
     display: none;
