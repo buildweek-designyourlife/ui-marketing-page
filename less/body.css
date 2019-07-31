@@ -1,5 +1,5 @@
 .container {
-  padding: 10%;
+  padding: 5%;
 }
 .section {
   padding: 40px 0;
@@ -62,7 +62,7 @@
   color: #39444e;
 }
 .section-b {
-  background: #39444e;
+  background: linear-gradient(to bottom right, #39444e, #4d5b6a);
   color: #dce2ed;
 }
 .section-b p {
@@ -76,7 +76,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 5%;
+  margin: 2%;
   height: 350px;
 }
 @media (max-width: 800px) {
@@ -86,11 +86,12 @@
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 100%;
+    height: auto;
   }
 }
 .section-b .steps .step {
   background-color: #d1d9e9;
-  margin: 1rem;
+  margin: 2%;
   border-radius: 10px;
   color: #1985b0;
   padding: 1rem;

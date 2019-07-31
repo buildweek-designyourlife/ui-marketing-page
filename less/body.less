@@ -2,7 +2,7 @@
 
 
 .container {
-    padding: 10%;
+    padding: 5%;
 }
 
 .section{
@@ -25,7 +25,7 @@
     h2 {
         font-size: 3rem;
         margin-bottom: 1.5rem;
-        text-align: center;       
+        text-align: center;
     }
     div .vid-contain iframe {
         max-width: 960px;
@@ -74,7 +74,7 @@
 }
   
 .section-b{
-    background: @black;
+    background: linear-gradient(to bottom right, @black, @darkGrey);
     color: @white;
     p {
         font-size: 1.8rem;
@@ -87,7 +87,7 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        margin: 5%;
+        margin: 2%;
         height: 350px;
         
         @media (max-width: 800px) {
@@ -96,11 +96,12 @@
             -ms-flex-direction: column;
             flex-direction: column;
             max-width: 100%;
+            height: auto;
         }
         
         .step {
             background-color: @lightGrey;
-            margin: 1rem;
+            margin: 2%;
             border-radius: 10px;
             color: @darkBlue;
             padding: 1rem;

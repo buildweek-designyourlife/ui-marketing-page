@@ -45,6 +45,15 @@
   font-weight: bold;
   margin-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  .header-content h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #dce2ed;
+    text-shadow: -1px 1px 0 rgba(20, 20, 20, 0.6);
+    margin: 20% 0;
+  }
+}
 .header-content p {
   font-size: 2.5rem;
   display: block;
@@ -52,6 +61,11 @@
 }
 .header-content .arrow {
   margin-top: 5rem;
+}
+.header-content .arrow a:hover {
+  cursor: pointer;
+  color: #89c732;
+  border-bottom: 1px solid #89c732;
 }
 .header-content a {
   text-decoration: none;
