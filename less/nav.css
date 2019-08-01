@@ -118,6 +118,18 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 nav {
   position: fixed;
   width: 100%;
@@ -140,8 +152,8 @@ nav {
   height: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-animation: slideInRight .5s backwards .5s;
-  animation: slideInRight .5s backwards .5s;
+  -webkit-animation: slideInRight 0.5s backwards 2.75s;
+  animation: slideInRight 0.5s backwards 2.75s;
 }
 .nav .logo a img:hover {
   -webkit-transform: scale(1.05);
@@ -197,7 +209,7 @@ nav {
   }
 }
 .nav .nav-links .link {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 2% 0;
@@ -258,8 +270,8 @@ nav {
   .nav .burger {
     display: block;
     cursor: pointer;
-    -webkit-animation: slideInLeft 0.5s ease-out backwards 0.75s;
-    animation: slideInLeft 0.5s ease-out backwards 0.75s;
+    -webkit-animation: slideInLeft 0.5s ease-out backwards 3s;
+    animation: slideInLeft 0.5s ease-out backwards 3s;
   }
 }
 .nav .burger div {
@@ -267,8 +279,8 @@ nav {
   height: 3px;
   background: #dce2ed;
   margin: 5px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .nav .toggle .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
