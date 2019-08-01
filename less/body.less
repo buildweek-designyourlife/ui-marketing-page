@@ -110,27 +110,43 @@
         }
         
         .step {
-            background-color: @lightGrey;
+            background: -webkit-gradient(linear, right top, left bottom, from(@black), to(rgb(0, 70, 60)));
+            background: linear-gradient(to bottom left, @black, rgb(0, 70, 60));
             margin: 2%;
             border-radius: 10px;
             color: @darkBlue;
             padding: 1rem;
             max-width: 33%;
             border: 1px solid transparent;
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, .6);
+            -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, .6);
+                    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .6);
+            -webkit-transition: all .2s ease-in;
             transition: all .2s ease-in;
+
             img {
                 max-width: 100%;
                 height: auto;
                 border-radius: 5px;
             }
+
+            p {
+                color: @white;
+
+                b {
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                }
+            }
+
             @media (max-width: 800px) {
                 max-width: 100%; 
             }
 
             &:hover {
-                transform: translateY(-2px) scale(1.05);
-                box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, .5);
+                -webkit-transform: translateY(-2px) scale(1.05);
+                        transform: translateY(-2px) scale(1.05);
+                -webkit-box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, .5);
+                        box-shadow: 0 1.2rem 2.2rem rgba(0, 0, 0, .5);
                 border: 1px solid @green;
             }
         }

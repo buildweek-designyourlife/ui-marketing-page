@@ -22,17 +22,99 @@
     transform: translateX(0);
   }
 }
-@keyframes slideInLeft {
+@-webkit-keyframes slideInLeft {
   0% {
+    -webkit-transform: translateX(50px);
     transform: translateX(50px);
     opacity: 0;
   }
-  90% {
-    transform: translateX(-5px);
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideInBottom {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInBottom {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -56,9 +138,13 @@ nav {
 }
 .nav .logo a img {
   height: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-animation: slideInRight 0.5s backwards 0.5s;
+  animation: slideInRight 0.5s backwards 0.5s;
 }
 .nav .logo a img:hover {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 .nav .nav-links {
@@ -72,7 +158,8 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   width: 30vw;
-  animation: slideInLeft 0.5s ease-out forwards 1.5s;
+  -webkit-animation: slideInLeft 0.5s ease-out backwards 0.75s;
+  animation: slideInLeft 0.5s ease-out backwards 0.75s;
 }
 @media (max-width: 1000px) {
   .nav .nav-links {
@@ -108,7 +195,7 @@ nav {
   }
 }
 .nav .nav-links .link {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 2% 0;
@@ -176,8 +263,8 @@ nav {
   height: 3px;
   background: #dce2ed;
   margin: 5px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .nav .toggle .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);

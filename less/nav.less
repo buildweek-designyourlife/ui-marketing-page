@@ -22,10 +22,14 @@ nav {
 
   .logo a img {
     height: 40px;
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    -webkit-animation: slideInRight .5s backwards .5s;
+            animation: slideInRight .5s backwards .5s;
 
     &:hover {
-      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
     }
   }
 
@@ -40,7 +44,8 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     width: 30vw;
-    animation: slideInLeft .5s ease-out forwards 1.5s;
+    -webkit-animation: slideInLeft .5s ease-out backwards .75s;
+            animation: slideInLeft .5s ease-out backwards .75s;
 
     @media (max-width: 1000px) {
       width: 40vw;

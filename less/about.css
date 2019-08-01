@@ -1,0 +1,23 @@
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 1rem;
+}
+.teamPhoto img {
+  border-radius: 50%;
+  padding: 1rem;
+  max-width: 100%;
+}
+.teamText p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #39444e;
+  color: #dce2ed;
+  border-radius: 10px;
+}
