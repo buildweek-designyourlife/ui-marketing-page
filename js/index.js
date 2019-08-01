@@ -9,7 +9,10 @@ const navSlide = () => {
   function init() {
     burger.classList.remove('toggle');
     nav.classList.remove('nav-active');
-    navLinks.forEach(link => {link.style.animation = ''});
+    navLinks.forEach(link => {
+      link.style.animation = '';
+      link.style.webkitAnimation = '';
+    });
   };
 
   
@@ -20,10 +23,12 @@ const navSlide = () => {
     
     //Animate links
     navLinks.forEach((link, index) => {
-      if (link.style.animation) {
+      if (link.style.animation || link.style.webkitAnimation) {
         link.style.animation = '';
+        link.style.webkitAnimation = '';
       } else {
         link.style.animation = `navLinkFade .35s ease forwards ${index / 7 + .25}s`;
+        link.style.webkitAnimation = `navLinkFade .35s ease forwards ${index / 7 + .25}s`;
       }
     });
     

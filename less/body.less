@@ -62,6 +62,7 @@
     margin: 1rem;
     font-size: 2rem;
     color: @white;
+    line-height: 1.2;
 
     p a {
         text-decoration: none;
@@ -74,8 +75,17 @@
 }
   
 .section-b{
-    background: linear-gradient(to bottom right, @black, @darkGrey);
+    background: url(../images/features-bg.jpg), rgba(0, 0, 0, .8);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: @white;
+
+    h2 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
     p {
         font-size: 1.8rem;
     }
