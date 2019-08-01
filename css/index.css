@@ -567,6 +567,7 @@ footer {
   }
   .team h2 {
     font-size: 3rem;
+    font-weight: bold;
   }
 }
 .teamPhoto img {
