@@ -339,6 +339,8 @@ nav {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    -webkit-animation: none;
+    animation: none;
   }
 }
 .nav .nav-links .link {
@@ -403,6 +405,8 @@ nav {
   .nav .burger {
     display: block;
     cursor: pointer;
+    -webkit-animation: slideInLeft 0.5s ease-out backwards 0.75s;
+    animation: slideInLeft 0.5s ease-out backwards 0.75s;
   }
 }
 .nav .burger div {
