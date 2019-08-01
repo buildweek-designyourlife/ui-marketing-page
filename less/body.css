@@ -53,6 +53,7 @@
   margin: 1rem;
   font-size: 2rem;
   color: #dce2ed;
+  line-height: 1.2;
 }
 .text-contain p a {
   text-decoration: none;
@@ -62,8 +63,16 @@
   color: #39444e;
 }
 .section-b {
-  background: linear-gradient(to bottom right, #39444e, #4d5b6a);
+  background: url(../images/features-bg.jpg), rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   color: #dce2ed;
+}
+.section-b h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 .section-b p {
   font-size: 1.8rem;
