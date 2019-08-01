@@ -76,6 +76,8 @@ nav {
       transition: -webkit-transform .5s ease-in;
       transition: transform .5s ease-in;
       transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+      -webkit-animation: none;
+      animation: none;
     }
     
     .link {
@@ -149,6 +151,8 @@ nav {
     @media (max-width: 800px) {
       display: block;
       cursor: pointer;
+      -webkit-animation: slideInLeft .5s ease-out backwards .75s;
+      animation: slideInLeft .5s ease-out backwards .75s;
     }
 
     div {
