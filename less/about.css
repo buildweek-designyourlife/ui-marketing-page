@@ -1,3 +1,6 @@
+.teamAll {
+  margin-top: 15%;
+}
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,7 +13,6 @@
   margin: 1rem;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #d1d9e9;
   border: 1px solid transparent;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
   transition: all 0.2s ease-in;
@@ -19,28 +21,53 @@
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #dce2ed;
+  text-shadow: -1px 1px 0 #39444e;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .team {
     display: flex;
     flex-direction: column;
+    padding: 10%;
   }
   .team h2 {
     font-size: 3rem;
     font-weight: bold;
   }
 }
+.team.clif {
+  background: url(../images/leaves.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.team.ken {
+  background: url(../images/cobblestone.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.team.allie {
+  background: url(../images/purple.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.team.warren {
+  background: url(../images/stone.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .teamPhoto img {
   display: flex;
+  border: 3px solid #dce2ed;
   border-radius: 50%;
   padding: 1rem;
   max-width: 400px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .teamPhoto img {
     display: block;
     max-width: 350px;
     flex-direction: column;
+    margin-bottom: 10%;
   }
 }
 .teamText p {
@@ -51,8 +78,9 @@
   background-color: #39444e;
   color: #dce2ed;
   border-radius: 10px;
+  box-shadow: -0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .teamText p {
     display: flex;
     flex-direction: column;
